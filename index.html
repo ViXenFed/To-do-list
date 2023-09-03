@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    </style>              
+</head>
+<body>
+    <header>
+        <form>
+            <input type="text" maxlength="35" id="add_title" placeholder="Write your task here">
+            <button type="button" id="input_btn" onclick="addTask()">+</button>
+        </form>
+        <div id="btn">
+            <button type="button" class="btns" id="odd" onclick="markOdd()">Odd</button>            
+            <button type="button" class="btns" id="even" onclick="markEven()">Even</button>
+            <button type="button" class="btns" id="delf" onclick="deleteFirst()">Delete first</button>
+            <button type="button" class="btns" id="dell" onclick="deleteLast()">Delete last</button>            
+        </div>
+    </header>
+    <ul id="ul">
+        <li class="note">Buy coffee <button type="button" class="delete" onclick="deleteLi(this.id)">X</button><button type="button" class="complete" onclick="completeLi(this.id)">V</button></li>
+        <li class="note">Pay bills <button type="button" class="delete" onclick="deleteLi(this.id)">X</button><button type="button" class="complete" onclick="completeLi(this.id)">V</button></li>
+        <li class="note">Meet sister <button type="button" class="delete" onclick="deleteLi(this.id)">X</button><button type="button" class="complete" onclick="completeLi(this.id)">V</button></li>
+        <li class="note">Repair computer<button type="button" class="delete" onclick="deleteLi(this.id)">X</button><button type="button" class="complete" onclick="completeLi(this.id)">V</button></li>
+        <li class="completed note">Read "1984" <button type="button" class="del_compl" onclick="deleteCompl(this.id)">X</button></li>
+        <li class="completed note">Do homework <button type="button" class="del_compl" onclick="deleteCompl(this.id)">X</button></li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
